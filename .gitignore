@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+dist/
+build/
+
+# uv
+.venv/
+
+# Secrets and generated certificates
+.env
+certs/
+*.pem
+*.key
+
+# Runtime state
+audit.log
+audit.jsonl
+
+# OS
+.DS_Store
