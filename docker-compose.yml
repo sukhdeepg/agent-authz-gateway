@@ -1,0 +1,14 @@
+services:
+  opa:
+    image: openpolicyagent/opa:latest
+    container_name: authz-opa
+    command:
+      - run
+      - --server
+      - --addr=:8181
+      - --log-level=error
+      - /policies
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./policies:/policies:ro
