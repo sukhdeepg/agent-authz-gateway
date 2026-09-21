@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 630" width="820" height="630" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="630" fill="#ffffff"/>
+
+  <text x="410" y="30" font-size="24" text-anchor="middle" fill="#1e1e1e">Agent Authorization Gateway</text>
+  <text x="410" y="54" font-size="15" text-anchor="middle" fill="#757575">every tool call is checked on its own</text>
+
+  <defs>
+    <marker id="ap" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#8b5cf6" stroke-width="1.6"/>
+    </marker>
+    <marker id="ab" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#4a9eed" stroke-width="1.6"/>
+    </marker>
+    <marker id="ao" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#f59e0b" stroke-width="1.6"/>
+    </marker>
+    <marker id="ag" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#22c55e" stroke-width="1.6"/>
+    </marker>
+    <marker id="ac" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#06b6d4" stroke-width="1.6"/>
+    </marker>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6" fill="none" stroke="#ef4444" stroke-width="1.6"/>
+    </marker>
+  </defs>
+
+  <!-- agent -->
+  <rect x="305" y="80" width="200" height="50" rx="10" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2"/>
+  <text x="405" y="111" font-size="17" text-anchor="middle" fill="#1e1e1e">AI agent</text>
+  <line x1="405" y1="130" x2="405" y2="158" stroke="#4a9eed" stroke-width="2" marker-end="url(#ab)"/>
+
+  <!-- gateway zone -->
+  <rect x="205" y="162" width="400" height="356" rx="12" fill="#e5dbff" stroke="#8b5cf6" stroke-width="1" opacity="0.45"/>
+  <text x="220" y="184" font-size="15" fill="#6d28d9">gateway</text>
+
+  <rect x="240" y="196" width="250" height="44" rx="9" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="365" y="224" font-size="15" text-anchor="middle" fill="#1e1e1e">1  check the badge</text>
+  <line x1="365" y1="240" x2="365" y2="260" stroke="#8b5cf6" stroke-width="2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="262" width="250" height="44" rx="9" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="365" y="290" font-size="15" text-anchor="middle" fill="#1e1e1e">2  ask the rules</text>
+  <line x1="365" y1="306" x2="365" y2="326" stroke="#8b5cf6" stroke-width="2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="328" width="250" height="44" rx="9" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="365" y="356" font-size="15" text-anchor="middle" fill="#1e1e1e">3  ask a person, if risky</text>
+  <line x1="365" y1="372" x2="365" y2="392" stroke="#8b5cf6" stroke-width="2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="394" width="250" height="44" rx="9" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="365" y="422" font-size="15" text-anchor="middle" fill="#1e1e1e">4  mint a one-call key</text>
+  <line x1="365" y1="438" x2="365" y2="458" stroke="#8b5cf6" stroke-width="2" marker-end="url(#ap)"/>
+
+  <rect x="240" y="460" width="250" height="44" rx="9" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="365" y="488" font-size="15" text-anchor="middle" fill="#1e1e1e">5  write it down</text>
+
+  <!-- tool server -->
+  <line x1="405" y1="518" x2="405" y2="548" stroke="#22c55e" stroke-width="2" marker-end="url(#ag)"/>
+  <rect x="295" y="550" width="220" height="50" rx="10" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+  <text x="405" y="581" font-size="17" text-anchor="middle" fill="#1e1e1e">tool server</text>
+
+  <!-- side services -->
+  <line x1="490" y1="284" x2="618" y2="284" stroke="#f59e0b" stroke-width="2" marker-end="url(#ao)"/>
+  <rect x="620" y="262" width="160" height="44" rx="9" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="290" font-size="15" text-anchor="middle" fill="#1e1e1e">OPA rules</text>
+
+  <line x1="490" y1="350" x2="618" y2="350" stroke="#f59e0b" stroke-width="2" marker-end="url(#ao)"/>
+  <rect x="620" y="328" width="160" height="44" rx="9" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="356" font-size="15" text-anchor="middle" fill="#1e1e1e">a human</text>
+
+  <line x1="490" y1="482" x2="618" y2="482" stroke="#06b6d4" stroke-width="2" marker-end="url(#ac)"/>
+  <rect x="620" y="460" width="160" height="44" rx="9" fill="#c3fae8" stroke="#06b6d4" stroke-width="2"/>
+  <text x="700" y="488" font-size="15" text-anchor="middle" fill="#1e1e1e">audit log</text>
+
+  <!-- refusal path -->
+  <line x1="240" y1="284" x2="192" y2="284" stroke="#ef4444" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="35" y="262" width="150" height="44" rx="9" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+  <text x="110" y="290" font-size="15" text-anchor="middle" fill="#1e1e1e">refused</text>
+  <path d="M110,262 L110,105 L300,105" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar)"/>
+</svg>
